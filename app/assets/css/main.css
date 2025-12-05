@@ -15,10 +15,25 @@
   --color-green-800: #016538;
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
+  --color-green-pharma: #00c498;
+
+  /* Example Blue shades */
+  --color-blue-500: #06396a;
+  --color-blue-400: #1a4b8c;
+  --color-blue-300: #3762a3;
+  --color-blue-pharma: #06396a;
 }
+
+/* Green colors */
+.text-green-pharma { color: var(--color-green-pharma); }
+.bg-green-pharma { background-color: var(--color-green-pharma); }
+
+/* Blue colors */
+.text-blue-pharma { color: var(--color-blue-pharma); }
+.bg-blue-pharma { background-color: var(--color-blue-pharma); }
 
 .swiper {
   width: 100%;
   height: 100%;
-  padding: 40px 20px !important;
+  padding: 0 0 60px 0 !important;
 }

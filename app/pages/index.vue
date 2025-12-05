@@ -76,7 +76,7 @@
 
             <UIcon
               name="i-mdi-magnify"
-              class="absolute right-4 top-1/2 -translate-y-1/2 text-[#00c49a] text-xl"
+              class="absolute right-4 top-1/2 -translate-y-1/2 text-green-pharma text-xl"
             />
           </div>
           <div class="text-sm md:mt-2 mt-[-10%]">Popular searches: Atorvastatin, Sildenafil, Zoloft, Lexapro...</div>
@@ -127,7 +127,232 @@
       </div>
     </UContainer>
   </div>
-  <TopBlock class="mt-[-32px]"/>
+  <TopBlock class="mt-[-32px] mb-[40px]"/>
+<!--  <UContainer class="bg_map  m-auto flex flex-col justify-between ">-->
+
+<!--    &lt;!&ndash; TOP ROW: Right corner &ndash;&gt;-->
+<!--    <div class="flex justify-end text-right">-->
+<!--      <div class=" text-[19px] uppercase leading-none">-->
+<!--        <p class ="font-extrabold text-green-pharma text-[60px]">Save</p>-->
+<!--        <div class="flex flex-row justify-end">-->
+<!--        <p class="font-extrabold text-green-pharma text-[20px] m-auto">-->
+<!--          <span class="align-top ">up</span><br/>-->
+<!--          to-->
+<!--        </p>-->
+<!--        <p class ="font-extrabold text-green-pharma text-[80px]">80%</p>-->
+<!--        </div>-->
+<!--        <p class ="font-extrabold text-blue-pharma text-[40px]">on drugs</p>-->
+
+<!--        <p class="text-[20px] font-bold mt-10 text-right">Order medications</p>-->
+<!--        <p class="text-[18px] font-bold text-right">from Europe, cheaper</p>-->
+<!--        <p class="text-[18px] font-bold text-right" >than Canada</p>-->
+
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; BOTTOM ROW: Left corner &ndash;&gt;-->
+<!--    <div class="flex justify-start  w-[40%]">-->
+<!--      <div class="text-left text-[14px]">-->
+<!--       <blockquote class="border-l-2 border-green-pharma border-dotted pl-4">-->
+<!--         You can visit our physical locations to drop off your local pharmacy’s prescription or email your prescription to our professional support staff. Enjoy savings that will put a smile on your face.-->
+<!--         Our Licensed Wholesale medication department purchase drugs from original manufacturers and distributors in Europe. You can ask us to email you our verified copy of our government approved license in wholesale medication. Authentic brand medications or generic is our business, your health is our Priority.-->
+<!--       </blockquote>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </UContainer>-->
+
+  <UContainer class="m-auto flex flex-col md:flex-col justify-between">
+
+    <!-- Mobile: Text above image -->
+    <div class="md:hidden mb-6">
+      <div class="text-right text-[19px] uppercase leading-none">
+        <p class="font-extrabold text-green-pharma text-[60px]">Save</p>
+        <div class="flex flex-row justify-end">
+          <p class="font-extrabold text-green-pharma text-[20px] mt-4 mr-1">
+            <span class="align-top">up</span><br/>
+            to
+          </p>
+          <p class="font-extrabold text-green-pharma text-[80px]">80%</p>
+        </div>
+        <p class="font-extrabold text-blue-pharma text-[40px]">on drugs</p>
+        <p class="text-[20px] font-bold mt-10 text-right">Order medications</p>
+        <p class="text-[18px] font-bold text-right">from Europe, cheaper</p>
+        <p class="text-[18px] font-bold text-right">than Canada</p>
+      </div>
+    </div>
+
+    <!-- Image container -->
+    <div class="bg_map md:w-full h-[300px] md:h-[700px] w-[400px] bg-contain bg-center bg-no-repeat relative">
+
+      <!-- Desktop blocks: only show on md+ -->
+      <div class="hidden md:flex flex-col justify-between h-full">
+
+        <!-- TOP ROW: Right corner -->
+        <div class="flex justify-end p-6">
+          <div class="text-right text-[19px] uppercase leading-none">
+            <p class="font-extrabold text-green-pharma text-[60px]">Save</p>
+            <div class="flex flex-row justify-end">
+              <p class="font-extrabold text-green-pharma text-[20px] m-auto">
+                <span class="align-top">up</span><br/>
+                to
+              </p>
+              <p class="font-extrabold text-green-pharma text-[80px]">80%</p>
+            </div>
+            <p class="font-extrabold text-blue-pharma text-[40px]">on drugs</p>
+            <p class="text-[20px] font-bold mt-10 text-right">Order medications</p>
+            <p class="text-[18px] font-bold text-right">from Europe, cheaper</p>
+            <p class="text-[18px] font-bold text-right">than Canada</p>
+          </div>
+        </div>
+
+        <!-- BOTTOM ROW: Left corner -->
+        <div class="flex justify-start p-6 w-[40%]">
+          <div class="text-left text-[14px]">
+            <blockquote class="border-l-2 border-green-pharma border-dotted pl-4">
+              You can visit our physical locations to drop off your local pharmacy’s prescription or email your prescription to our professional support staff. Enjoy savings that will put a smile on your face.
+              Our Licensed Wholesale medication department purchase drugs from original manufacturers and distributors in Europe. You can ask us to email you our verified copy of our government approved license in wholesale medication. Authentic brand medications or generic is our business, your health is our Priority.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile: Text under image -->
+    <div class="md:hidden mt-6 block">
+      <!-- BOTTOM ROW: Left corner text -->
+      <div class="text-[14px]">
+        <blockquote class="border-l-2 border-green-pharma border-dotted pl-4">
+          You can visit our physical locations to drop off your local pharmacy’s prescription or email your prescription to our professional support staff. Enjoy savings that will put a smile on your face.
+          Our Licensed Wholesale medication department purchase drugs from original manufacturers and distributors in Europe. You can ask us to email you our verified copy of our government approved license in wholesale medication. Authentic brand medications or generic is our business, your health is our Priority.
+        </blockquote>
+      </div>
+    </div>
+  </UContainer>
+
+  <UContainer>
+    <div class="m-auto text-center uppercase mt-20 text-3xl">How it works</div>
+
+    <div class="m-auto max-w-[400px] mt-12 relative">
+      <img src="/img/common/layer_how_it_works.png" alt="how_it_works" class="w-full h-auto" />
+
+      <!-- Play icon centered over the image -->
+      <a
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        target="_blank"
+        class="absolute inset-0 flex items-center justify-center top-0 bottom-10"
+      >
+        <svg class="svg-sprite-icon icon-play-button w-[50px] h-[50px] fill-gray-500">
+          <use xlink:href="/img/sprite/symbol/sprite.svg#play-button"></use>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Watch video button -->
+    <a
+      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      target="_blank"
+      class="flex items-center justify-center mx-auto mt-5 bg-white text-green-pharma px-6 py-2 rounded-full hover:bg-gray-100"
+    >
+      <svg class="svg-sprite-icon icon-play-button mr-2 w-[20px] h-[20px] fill-gray-400">
+        <use xlink:href="/img/sprite/symbol/sprite.svg#play-button"></use>
+      </svg>
+      <span>Watch the video</span>
+    </a>
+  </UContainer>
+
+
+  <UContainer class="py-16">
+    <div class="flex flex-col md:flex-row md:justify-between md:gap-10 items-center">
+
+      <!-- STEP 1 -->
+      <div class="flex flex-col items-center relative w-full md:w-1/3 mb-12 md:mb-0">
+        <!-- Connecting line (left) -->
+        <img src="/img/common/line_left.svg" alt="" class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-1/3 h-px">
+
+        <!-- Circle + Icon -->
+        <div class="relative flex items-center justify-center w-24 h-24 rounded-full bg-[#e6ebeb] mb-4">
+          <svg class="svg-sprite-icon w-15 h-15 fill-green-pharma">
+            <use xlink:href="/img/sprite/symbol/sprite.svg#step_01"></use>
+          </svg>
+          <div class="absolute top-0 right-0 w-8 h-8 bg-blue-pharma rounded-full flex items-center justify-center">
+            <span class="text-white font-bold">01</span>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="text-center max-w-xs">
+          <p class="font-bold uppercase leading-5 mb-2">Search for Medications & Save</p>
+          <div class="border-t-2 border-dashed border-gray-300 w-16 mx-auto my-2"></div>
+          <p class="text-sm ">Easily find the medications you are looking for. We price match with an additional 10% discount.</p>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="flex flex-col items-center relative w-full md:w-1/3 mb-12 md:mb-0">
+        <!-- Connecting line (right) -->
+        <img src="/img/common/line_right.svg" alt="" class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-px">
+
+        <!-- Circle + Icon -->
+        <div class="relative flex items-center justify-center w-24 h-24 rounded-full bg-[#e6ebeb] mb-4">
+          <svg class="svg-sprite-icon w-10 h-10 fill-green-pharma">
+            <use xlink:href="/img/sprite/symbol/sprite.svg#step_02"></use>
+          </svg>
+          <div class="absolute bottom-0 left-0 w-8 h-8 bg-blue-pharma rounded-full flex items-center justify-center">
+            <span class="text-white font-bold">02</span>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="text-center max-w-xs">
+          <p class="font-bold uppercase leading-5 mb-2">Order Your Prescriptions</p>
+          <div class="border-t-2 border-dashed border-gray-300 w-16 mx-auto my-2"></div>
+          <p class="text-sm ">Place your order online or by phone with a prescription for your meds. Note: we do not ship or sell controlled substances.</p>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="flex flex-col items-center relative w-full md:w-1/3">
+        <!-- Circle + Icon -->
+        <div class="relative flex items-center justify-center w-24 h-24 rounded-full bg-[#e6ebeb] mb-4">
+          <!-- Icon inside gray circle -->
+          <svg class="svg-sprite-icon w-10 h-10 fill-green-pharma">
+            <use xlink:href="/img/sprite/symbol/sprite.svg#step_03"></use>
+          </svg>
+
+          <!-- Blue number circle -->
+          <div class="absolute top-0 right-0 w-8 h-8 bg-blue-pharma rounded-full flex items-center justify-center">
+            <span class="text-white font-bold">03</span>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="text-center max-w-xs">
+          <p class="font-bold uppercase leading-5 mb-2">Free Shipping from $200</p>
+          <div class="border-t-2 border-dashed border-gray-300 w-16 mx-auto my-2"></div>
+          <p class="text-sm">Your prescriptions will arrive at the indicated address within 3-5 days once shipped.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- HOW IT WORKS BUTTON -->
+    <NuxtLink
+      to="/how-it-works"
+      class="mt-10 inline-flex items-center justify-center mx-auto px-6 py-3 bg-green-pharma text-white font-bold rounded-full hover:bg-green-500 transition"
+    >
+      How it Works
+      <svg class="svg-sprite-icon w-4 h-4 ml-2 fill-white">
+        <use xlink:href="/img/sprite/symbol/sprite.svg#arrow_right"></use>
+      </svg>
+    </NuxtLink>
+  </UContainer>
+
+
+  <!-- Sample savings-->
+  <UContainer pb-16>
+    <div class="m-auto text-center uppercase text-3xl"> Sample saving</div>
+  </UContainer>
 
 </template>
 
@@ -165,16 +390,44 @@ const clearSearch = () => {
   min-height: 100vh;
 }
 
-/* Mobile background */
-@media (max-width: 768px) {
-  .home-page {
-    background-image: url('/img/common/001-mob.png');
-  }
-}
-
 .bg-green {
   background-color: #00c49a;
   width: 97px;
   height: 97px;
 }
+
+.bg_map {
+  background-image: url('/img/common/map_9669-1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+}
+
+.step__num {
+  font-size: 1rem;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    background-image: url('/img/common/001-mob.png');
+  }
+
+  .bg_map {
+    background-image: url('/img/common/plane_1255-1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+
+
 </style>

@@ -133,7 +133,6 @@ onMounted(async () => {
   border-right: 1px dotted rgba(202, 214, 217, .49);
   border-bottom: 1px dotted rgba(202, 214, 217, .49);
   padding: 18px 20px;
-  outline: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,6 +151,20 @@ onMounted(async () => {
   opacity: 0;
   transition: all .3s ease;
 }
+
+@media (hover) {
+  .medications-link:hover:before {
+    opacity: 1;
+  }
+  .medications-link:hover span,
+  .medications-link:hover .medications-icon,
+  .medications-link:hover .icon-arrow_right,
+  .medications-link:hover svg use {
+    color: #00c498;
+    fill: #00c498;
+  }
+}
+
 
 .medications-link:hover:before {
   opacity: 1;
@@ -186,4 +199,6 @@ onMounted(async () => {
 .medications-link:hover svg use {
   fill: #00c498;
 }
+
+
 </style>
