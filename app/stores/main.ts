@@ -33,6 +33,12 @@ export const useMainStore = defineStore('main', {
       return config.public.apiHost
     },
 
+    mediaUrl(path?: string) {
+      if (!path) return '/img/common/placeholder.png'
+      const config = useRuntimeConfig()
+      return config.public.media + path
+    },
+
     async load(uri: string, key: string | null = null) {
       if (key && this[key] !== undefined && this[key] !== null) return this[key]
 
@@ -77,13 +83,14 @@ export const useMainStore = defineStore('main', {
       return this.load('/product/top?expand=form', 'topProducts')
     },
 
-    // async samples() { return this.load('/product/samples?expand=image,price', 'samples') },
+    async samples() { return this.load('/product/samples?expand=image,price', 'samples') },
     async site() { return this.load('/site', 'site') },
     // async about() { return this.load('/about?expand=image', 'about') },
     // async faq() { return this.load('/faq', 'faq') },
     // async listing(letter: string) { return this.load('/product/listing?letter=' + letter, 'listing' + (letter ? '-' + letter : '')) },
+    // async product(slug: string) { return this.load('/product/' + slug + '?expand=prices,images,image,original,products') },
     async product(slug: string) { return this.load('/product/' + slug + '?expand=prices,images,image,original,products') },
-    // async additional(slug: string) { return this.load('/product/' + slug + '/additional') },
+    async additional(slug: string) { return this.load('/product/' + slug + '/additional') },
     async search(query: string) { return this.load('/product/search?s=' + query) },
     // async order(payload: any) { return this.request('/product/order', payload) },
     // async contact(payload: any) { return this.request('/site/contact', payload) },

@@ -1,3 +1,4 @@
+
 <template>
   <div class="home-page">
     <UContainer class="py-12 flex flex-col gap-10 md:px-0 px-4">
@@ -128,39 +129,39 @@
     </UContainer>
   </div>
   <TopBlock class="mt-[-32px] mb-[40px]"/>
-<!--  <UContainer class="bg_map  m-auto flex flex-col justify-between ">-->
+  <!--  <UContainer class="bg_map  m-auto flex flex-col justify-between ">-->
 
-<!--    &lt;!&ndash; TOP ROW: Right corner &ndash;&gt;-->
-<!--    <div class="flex justify-end text-right">-->
-<!--      <div class=" text-[19px] uppercase leading-none">-->
-<!--        <p class ="font-extrabold text-green-pharma text-[60px]">Save</p>-->
-<!--        <div class="flex flex-row justify-end">-->
-<!--        <p class="font-extrabold text-green-pharma text-[20px] m-auto">-->
-<!--          <span class="align-top ">up</span><br/>-->
-<!--          to-->
-<!--        </p>-->
-<!--        <p class ="font-extrabold text-green-pharma text-[80px]">80%</p>-->
-<!--        </div>-->
-<!--        <p class ="font-extrabold text-blue-pharma text-[40px]">on drugs</p>-->
+  <!--    &lt;!&ndash; TOP ROW: Right corner &ndash;&gt;-->
+  <!--    <div class="flex justify-end text-right">-->
+  <!--      <div class=" text-[19px] uppercase leading-none">-->
+  <!--        <p class ="font-extrabold text-green-pharma text-[60px]">Save</p>-->
+  <!--        <div class="flex flex-row justify-end">-->
+  <!--        <p class="font-extrabold text-green-pharma text-[20px] m-auto">-->
+  <!--          <span class="align-top ">up</span><br/>-->
+  <!--          to-->
+  <!--        </p>-->
+  <!--        <p class ="font-extrabold text-green-pharma text-[80px]">80%</p>-->
+  <!--        </div>-->
+  <!--        <p class ="font-extrabold text-blue-pharma text-[40px]">on drugs</p>-->
 
-<!--        <p class="text-[20px] font-bold mt-10 text-right">Order medications</p>-->
-<!--        <p class="text-[18px] font-bold text-right">from Europe, cheaper</p>-->
-<!--        <p class="text-[18px] font-bold text-right" >than Canada</p>-->
+  <!--        <p class="text-[20px] font-bold mt-10 text-right">Order medications</p>-->
+  <!--        <p class="text-[18px] font-bold text-right">from Europe, cheaper</p>-->
+  <!--        <p class="text-[18px] font-bold text-right" >than Canada</p>-->
 
-<!--      </div>-->
-<!--    </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
 
-<!--    &lt;!&ndash; BOTTOM ROW: Left corner &ndash;&gt;-->
-<!--    <div class="flex justify-start  w-[40%]">-->
-<!--      <div class="text-left text-[14px]">-->
-<!--       <blockquote class="border-l-2 border-green-pharma border-dotted pl-4">-->
-<!--         You can visit our physical locations to drop off your local pharmacy’s prescription or email your prescription to our professional support staff. Enjoy savings that will put a smile on your face.-->
-<!--         Our Licensed Wholesale medication department purchase drugs from original manufacturers and distributors in Europe. You can ask us to email you our verified copy of our government approved license in wholesale medication. Authentic brand medications or generic is our business, your health is our Priority.-->
-<!--       </blockquote>-->
-<!--      </div>-->
-<!--    </div>-->
+  <!--    &lt;!&ndash; BOTTOM ROW: Left corner &ndash;&gt;-->
+  <!--    <div class="flex justify-start  w-[40%]">-->
+  <!--      <div class="text-left text-[14px]">-->
+  <!--       <blockquote class="border-l-2 border-green-pharma border-dotted pl-4">-->
+  <!--         You can visit our physical locations to drop off your local pharmacy’s prescription or email your prescription to our professional support staff. Enjoy savings that will put a smile on your face.-->
+  <!--         Our Licensed Wholesale medication department purchase drugs from original manufacturers and distributors in Europe. You can ask us to email you our verified copy of our government approved license in wholesale medication. Authentic brand medications or generic is our business, your health is our Priority.-->
+  <!--       </blockquote>-->
+  <!--      </div>-->
+  <!--    </div>-->
 
-<!--  </UContainer>-->
+  <!--  </UContainer>-->
 
   <UContainer class="m-auto flex flex-col md:flex-col justify-between">
 
@@ -351,7 +352,10 @@
 
   <!-- Sample savings-->
   <UContainer pb-16>
-    <div class="m-auto text-center uppercase text-3xl"> Sample saving</div>
+<!--    <div class="m-auto text-center uppercase text-3xl"> Sample saving</div>-->
+      <div class="bg-lightgreen-pharma  pb-16">
+        <TopSavings />
+      </div>
   </UContainer>
 
 </template>
