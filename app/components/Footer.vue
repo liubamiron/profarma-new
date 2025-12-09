@@ -9,12 +9,17 @@
   </div>
 
   <!-- Main Footer -->
-  <UContainer class="bg-blue-pharma text-white py-12 px-6 mt-0 md:-mt-64">
+  <UContainer class="bg-blue-pharma text-white py-8 px-6 mt-0 md:-mt-55">
     <div class="flex flex-col md:grid md:grid-cols-3 gap-8">
 
+      <!-- Copyright -->
+      <div class="flex order-3 md:order-1 justify-center  items-center mt-6 md:mt-0 text-center ">
+        © 2021 ProFarmaExpress, Inc.
+      </div>
+
       <!-- Logo + Social Icons -->
-      <div class="flex flex-col items-center md:items-start">
-        <NuxtLink to="/" class="flex items-center justify-center gap-2">
+      <div class="flex order-1 md:order-2 flex-col items-center justify-center gap-1">
+        <NuxtLink to="/" class="flex items-center justify-center gap-6">
           <img
             src="/img/common/logo_desk_futer.png"
             class="h-auto w-[220px]"
@@ -23,14 +28,14 @@
         </NuxtLink>
 
         <div class="flex items-center justify-center gap-4 mt-4 md:mt-2">
-          <UIcon name="i-mdi-facebook" class="text-white w-8 h-8 hover:text-blue-600 transition" />
-          <UIcon name="i-mdi-instagram" class="text-white w-8 h-8 hover:text-pink-500 transition" />
-          <UIcon name="i-mdi-twitter" class="text-white w-8 h-8 hover:text-blue-400 transition" />
+          <UIcon name="i-mdi-facebook" class="text-white w-6 h-6 hover:text-blue-600 transition" />
+          <UIcon name="i-mdi-instagram" class="text-white w-6 h-6 hover:text-pink-500 transition" />
+          <UIcon name="i-mdi-twitter" class="text-white w-6 h-6 hover:text-blue-400 transition" />
         </div>
       </div>
 
       <!-- Links -->
-      <div class="flex justify-center md:justify-start mt-6 md:mt-0">
+      <div class="flex order-2 md:order-3 justify-center md:justify-start mt-6 md:mt-0">
         <ul class="flex flex-col md:flex-row flex-wrap items-center gap-2 text-center md:text-left">
 
           <li class="flex items-center md:after:content-[''] md:after:border-r md:after:border-gray-400 md:after:h-4 md:after:mx-2">
@@ -54,11 +59,6 @@
         </ul>
       </div>
 
-
-      <!-- Copyright -->
-      <div class="flex justify-center md:justify-end items-center mt-6 md:mt-0 text-center md:text-right">
-        © 2021 ProFarmaExpress, Inc.
-      </div>
 
     </div>
   </UContainer>
