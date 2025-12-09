@@ -246,7 +246,7 @@
     </div>
   </UContainer>
 
-  <UContainer>
+  <UContainer class="bg-white">
     <div class="m-auto text-center uppercase mt-20 text-3xl">
       How it works
     </div>
@@ -283,7 +283,7 @@
     </a>
   </UContainer>
 
-  <UContainer class="py-16">
+  <UContainer class="py-16 bg-white">
     <div class="flex flex-col md:flex-row md:justify-between md:gap-10 items-center">
       <!-- STEP 1 -->
       <div class="flex flex-col items-center relative w-full md:w-1/3 mb-12 md:mb-0">
@@ -386,12 +386,7 @@
       </svg>
     </NuxtLink>
   </UContainer>
-
-  <UContainer pb-16>
-    <div class="bg-lightgreen-pharma  pb-16">
-      <TopSavings />
-    </div>
-  </UContainer>
+  <TopSavings />
 </template>
 
 <script setup lang="ts">
@@ -453,9 +448,6 @@ const clearSearch = () => {
 @media (max-width: 768px) {
   .home-page {
     background-image: url('/img/common/001-mob.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .bg_map {

@@ -38,7 +38,7 @@
     </div>
 
     <!-- MAIN HEADER -->
-    <UContainer class="py-4">
+    <UContainer class="pb-1 pt-3 md:pb-4">
       <!-- MOBILE ROW 1: hamburger + logo + cart -->
       <div class="flex items-center justify-between md:hidden mb-3">
         <!-- Hamburger -->
@@ -57,12 +57,14 @@
         </NuxtLink>
 
         <!-- Cart -->
-        <NuxtLink to="/cart" class="flex items-center text-[#06396a]">
-          <UIcon name="i-mdi-cart-outline" class="text-3xl text-[#00c49a]" />
+        <NuxtLink to="/cart" class="flex items-center text-[#06396a] ">
+          <div class="w-[50px] m-auto text-center">
+          <UIcon name="i-mdi-cart-outline" class="text-xl text-[#00c49a]" />
+          </div>
         </NuxtLink>
       </div>
       <!-- MOBILE ROW 2: search -->
-      <div class="md:hidden mb-4">
+      <div class="md:hidden mb-2">
         <div class="relative w-full">
           <input
               ref="mobileTextRef"
