@@ -16,7 +16,7 @@
       >
         <SwiperSlide v-for="product in products" :key="product.id" class="flex justify-center p-4">
           <NuxtLink :to="`/product/${product.slug}`" class="no-underline">
-            <UCard class="overflow-hidden hover:shadow-md bg-white" style="height: 350px; display: flex; flex-direction: column;">
+            <UCard class="overflow-hidden hover:shadow-md bg-white border-none" style="height: 350px; display: flex; flex-direction: column;">
 
               <!-- Product image -->
               <div class="flex justify-center items-center h-45 bg-white shrink-0">

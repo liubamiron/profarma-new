@@ -79,6 +79,7 @@ export interface IProductSearch extends IProductMin {
     price: string
     original: string
   }
+  title: string
 }
 
 export interface IProduct extends IProductMin {
@@ -87,11 +88,12 @@ export interface IProduct extends IProductMin {
   products: IProduct[]
   image: IProductImage | null
   images: IProductImage[]
-  price: {
+  prices: {
     price: string
     original: string
   }
   info: IProductInfo[]
+  title: string
 }
 
 export interface ICartItem {
@@ -110,6 +112,11 @@ export interface IProductInfo {
   id: number
   title: string
   content: string
+  prices: {
+    price: string
+    original: string
+  }
+  image: string
 }
 
 export interface IProductOptions {
