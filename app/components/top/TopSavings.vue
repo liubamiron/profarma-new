@@ -1,5 +1,5 @@
 <template>
-  <UContainer class=" mt-12 pb-16 bg-lightgreen-pharma">
+  <UContainer class=" mt-12 pb-12 md:pb-30 bg-lightgreen-pharma">
     <div class="m-auto text-center uppercase text-3xl pt-12"> Sample savings</div>
     <div class="border-t-1 md:border-t-4 border-dotted border-green-pharma md:w-[10%] w-[80%] mx-auto my-2"></div>
     <div class=" text-blue-pharma text-center pt-4 pb-12">Stay Healthy, Be Healthy, Love Life and Enjoy Our Mail Order Service!</div>

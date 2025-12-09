@@ -64,7 +64,7 @@
           <div class="tab-content flex mt-4 gap-12">
             <!-- Left column: Quick links (if multiple contents inside tab) -->
             <div v-if="currentTabLinks.length > 1" class="w-1/4 flex flex-col gap-2">
-              <h2>Quick Links</h2>
+              <h2 class="hidden md:block">Quick Links</h2>
               <div class="border-t-[0.5] md:border-t-2 border-dotted border-gray-200 w-full mx-auto"></div>
 
               <button
@@ -105,7 +105,7 @@
 
               <!-- Quick Links -->
               <div v-if="tab.items.length > 1" class="mb-2">
-                <h3 class="font-medium">Quick Links</h3>
+                <h3 class="font-medium hidden md:block">Quick Links</h3>
                 <div class="border-t-[0.5] border-dotted border-gray-200 w-full my-2"></div>
 
                 <div v-for="item in tab.items" :key="item.slug" class="mb-1 border-b border-gray-100">
@@ -124,7 +124,7 @@
                   </button>
 
                   <!-- Quick link content -->
-                  <div v-show="mobileActiveLink === item.slug" class="pl-4 py-2">
+                  <div v-show="mobileActiveLink === item.slug" class="pl-4 py-2 leading-4">
                     <div v-html="item.content" class="text-gray-700"></div>
                   </div>
                 </div>

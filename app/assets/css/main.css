@@ -50,3 +50,8 @@
   opacity: 1;
   background-color: var(--color-green-pharma);
 }
+
+body {
+  background: white;
+  color: var(--color-blue-pharma);
+}
