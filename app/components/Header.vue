@@ -53,7 +53,7 @@
 
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center">
-          <img src="/img/common/logo_desk_head.png" class="h-auto max-w-[220px]" alt="ProfarmaExpress" />
+          <img src="/img/common/logo_desk_head.png" class="h-auto max-w-[170px]" alt="ProfarmaExpress" />
         </NuxtLink>
 
         <!-- Cart -->

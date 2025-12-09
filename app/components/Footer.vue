@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-green-pharma py-10 flex flex-col">
-    <UContainer class="bg-blue-pharma text-white py-12 px-6">
+    <UContainer class="bg-blue-pharma text-white py-12 px-6 pt-[-10px]">
       <div class="flex flex-col md:grid md:grid-cols-3 gap-8">
 
         <!-- Logo + Social Icons -->
@@ -39,7 +38,7 @@
       </div>
     </UContainer>
 
-    <!-- Footer note -->
+  <div class="bg-green-pharma py-10 flex flex-col">
     <UContainer class="text-center text-white mt-6 px-4 md:px-6">
       ProFarma Express strives to be accessible to all, including those with disabilities.
       If you are having difficulty accessing this website or ordering prescriptions,
