@@ -59,21 +59,54 @@ export const useMainStore = defineStore('main', {
     //   return result
     // },
 
+    // async load(
+    //   uri: string,
+    //   key: string | null = null,
+    //   method: string = 'GET',
+    //   headers: Record<string, string> = {},
+    //   credentials?: RequestCredentials
+    // ) {
+    //   if (key && this[key] !== undefined && this[key] !== null) return this[key]
+    //
+    //   const host = this.privateApiHost()
+    //
+    //   const result = await fetch(host + uri, {
+    //     method,
+    //     headers,
+    //     credentials
+    //   })
+    //     .then(res => res.json())
+    //     .then(res => {
+    //       if (!res.success) return null
+    //       if (key) this[key] = res.data
+    //       return res.data
+    //     })
+    //     .catch(err => {
+    //       console.error(err)
+    //       return null
+    //     })
+    //
+    //   if (key) this[key] = result
+    //   return result
+    // },
+
     async load(
       uri: string,
       key: string | null = null,
-      method: string = 'GET',
-      headers: Record<string, string> = {},
-      credentials?: RequestCredentials
+      options: {
+        method?: string,
+        headers?: Record<string, string>,
+        credentials?: RequestCredentials
+      } = {}
     ) {
       if (key && this[key] !== undefined && this[key] !== null) return this[key]
 
       const host = this.privateApiHost()
 
       const result = await fetch(host + uri, {
-        method,
-        headers,
-        credentials
+        method: options.method || 'GET',
+        headers: options.headers,
+        credentials: options.credentials || 'same-origin',
       })
         .then(res => res.json())
         .then(res => {
@@ -89,7 +122,6 @@ export const useMainStore = defineStore('main', {
       if (key) this[key] = result
       return result
     },
-
 
     async request(uri: string, data: any, method: string = 'POST') {
       const host = this.privateApiHost()
@@ -112,17 +144,17 @@ export const useMainStore = defineStore('main', {
     // },
 
     async top() {
-      return this.load(
-        '/top-products',
-        'topProducts',
-        'GET',
-        {
+      return this.load('/top-products', 'topProducts', {
+        method: 'GET',
+        headers: {
           'Content-Type': 'application/json',
-          'X-API-Key': '023ef43c0b85b92518b5a30e6d947a9a8db3d28760716b1b0d590cfa57b1b61c'
+          'X-API-Key': '023ef43c0b85b92518b5a30e6d947a9a8db3d28760716b1b0d590cfa57b1b61c',
+          'Access-Control-Allow-Origin': '*'
         },
-        'include' //credentials
-      )
+        credentials: 'include'
+      })
     },
+
 
     async samples() { return this.load('/product/', 'samples') },
     async site() { return this.load('/site', 'site') },
