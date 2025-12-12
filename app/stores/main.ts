@@ -127,7 +127,7 @@ export const useMainStore = defineStore('main', {
     // async faq() { return this.load('/faq', 'faq') },
     // async listing(letter: string) { return this.load('/product/listing?letter=' + letter, 'listing' + (letter ? '-' + letter : '')) },
     // async product(slug: string) { return this.load('/product/' + slug + '?expand=prices,images,image,original,products') },
-    async product(slug: string) { return this.load('/product/' + {slug} ) },
+    async product(slug: string) { return this.load('/product/' + slug ) },
     async additional(slug: string) { return this.load('/product/' + slug + '/additional') },
     async search(query: string) { return this.load('/product/search?s=' + query) },
     // async order(payload: any) { return this.request('/product/order', payload) },
