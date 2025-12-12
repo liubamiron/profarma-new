@@ -42,18 +42,18 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      domain: process.env.DOMAIN || 'profarmaexpress.com',
+      domain: process.env.DOMAIN || 'activecaresupplies.techphproject.com/api',
       host: process.env.SCHEMA
-        ? process.env.SCHEMA + '://' + (process.env.DOMAIN || 'profarmaexpress.com')
-        : 'https://profarmaexpress.com',
+        ? process.env.SCHEMA + '://' + (process.env.DOMAIN || 'api.activecaresupplies.techphproject.com/api')
+        : 'https://activecaresupplies.techphproject.com/api',
 
       media: process.env.SCHEMA
-        ? process.env.SCHEMA + '://api.' + (process.env.DOMAIN || 'profarmaexpress.com') + '/media'
-        : 'https://api.profarmaexpress.com/media',
+        ? process.env.SCHEMA + '://' + (process.env.DOMAIN || 'activecaresupplies.techphproject.com/api/') + '/media'
+        : 'https://activecaresupplies.techphproject.com/media/api',
 
       apiHost: process.env.SCHEMA
-        ? process.env.SCHEMA + '://api.' + (process.env.DOMAIN || 'profarmaexpress.com')
-        : 'https://api.profarmaexpress.com'
+        ? process.env.SCHEMA + '://' + (process.env.DOMAIN || 'api.activecaresupplies.techphproject.com/api')
+        : 'https://activecaresupplies.techphproject.com/api'
     }
   }
 })

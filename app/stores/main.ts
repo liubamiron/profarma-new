@@ -39,11 +39,40 @@ export const useMainStore = defineStore('main', {
       return config.public.media + path
     },
 
-    async load(uri: string, key: string | null = null) {
+    // async load(uri: string, key: string | null = null) {
+    //   if (key && this[key] !== undefined && this[key] !== null) return this[key]
+    //
+    //   const host = this.privateApiHost()
+    //   const result = await fetch(host + uri)
+    //     .then(res => res.json())
+    //     .then(res => {
+    //       if (!res.success) return null
+    //       if (key) this[key] = res.data
+    //       return res.data
+    //     })
+    //     .catch(err => {
+    //       console.error(err)
+    //       return null
+    //     })
+    //
+    //   if (key) this[key] = result
+    //   return result
+    // },
+
+    async load(
+      uri: string,
+      key: string | null = null,
+      method: string = 'GET',
+      headers: Record<string, string> = {}
+    ) {
       if (key && this[key] !== undefined && this[key] !== null) return this[key]
 
       const host = this.privateApiHost()
-      const result = await fetch(host + uri)
+
+      const result = await fetch(host + uri, {
+        method,
+        headers
+      })
         .then(res => res.json())
         .then(res => {
           if (!res.success) return null
@@ -58,6 +87,7 @@ export const useMainStore = defineStore('main', {
       if (key) this[key] = result
       return result
     },
+
 
     async request(uri: string, data: any, method: string = 'POST') {
       const host = this.privateApiHost()
@@ -79,17 +109,25 @@ export const useMainStore = defineStore('main', {
     //     return result ?? [] // always return an array
     // },
 
-    async top() {
-      return this.load('/product/top?expand=form', 'topProducts')
+    async top(method: string = 'GET') {
+      return this.load(
+        '/top-products',
+        'topProducts',
+        method,
+        {
+          'Content-Type': 'application/json',
+          'X-API-Key': '023ef43c0b85b92518b5a30e6d947a9a8db3d28760716b1b0d590cfa57b1b61c'
+        }
+      )
     },
 
-    async samples() { return this.load('/product/samples?expand=image,price', 'samples') },
+    async samples() { return this.load('/product/', 'samples') },
     async site() { return this.load('/site', 'site') },
     // async about() { return this.load('/about?expand=image', 'about') },
     // async faq() { return this.load('/faq', 'faq') },
     // async listing(letter: string) { return this.load('/product/listing?letter=' + letter, 'listing' + (letter ? '-' + letter : '')) },
     // async product(slug: string) { return this.load('/product/' + slug + '?expand=prices,images,image,original,products') },
-    async product(slug: string) { return this.load('/product/' + slug + '?expand=prices,images,image,original,products') },
+    async product(slug: string) { return this.load('/product/' + {slug} ) },
     async additional(slug: string) { return this.load('/product/' + slug + '/additional') },
     async search(query: string) { return this.load('/product/search?s=' + query) },
     // async order(payload: any) { return this.request('/product/order', payload) },
