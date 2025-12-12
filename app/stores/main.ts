@@ -63,7 +63,8 @@ export const useMainStore = defineStore('main', {
       uri: string,
       key: string | null = null,
       method: string = 'GET',
-      headers: Record<string, string> = {}
+      headers: Record<string, string> = {},
+      credentials?: RequestCredentials
     ) {
       if (key && this[key] !== undefined && this[key] !== null) return this[key]
 
@@ -71,7 +72,8 @@ export const useMainStore = defineStore('main', {
 
       const result = await fetch(host + uri, {
         method,
-        headers
+        headers,
+        credentials
       })
         .then(res => res.json())
         .then(res => {
@@ -109,15 +111,16 @@ export const useMainStore = defineStore('main', {
     //     return result ?? [] // always return an array
     // },
 
-    async top(method: string = 'GET') {
+    async top() {
       return this.load(
         '/top-products',
         'topProducts',
-        method,
+        'GET',
         {
           'Content-Type': 'application/json',
           'X-API-Key': '023ef43c0b85b92518b5a30e6d947a9a8db3d28760716b1b0d590cfa57b1b61c'
-        }
+        },
+        'include' //credentials
       )
     },
 
